@@ -1,3 +1,18 @@
+@font-face {
+    font-family: roboto;
+    src: url("../public/RobotoSlab-Regular.ttf");
+}
+
+@font-face {
+    font-family: robotoL;
+    src: url("../public/RobotoSlab-Light.ttf");
+}
+
+@font-face {
+    font-family: robotoM;
+    src: url("../public/RobotoMono-Light.ttf");
+}
+
 .title {
   font-family: robotoL;
   font-size: 48px;
