@@ -93,7 +93,7 @@ export default function Submit() {
                             contain any part of the original, nor does it resemble a gecko.
                         </td>
                         <td>
-                            Yes, it is a gecko. Yes, the gecko is very cool. But not the type of gecko we're looking
+                            Yes, it is a gecko. Yes, the gecko is very cool. But not the type of gecko {"we're"} looking
                             for. (However, adding a gecko-shaped border would qualify it)
                         </td>
                         <td>
@@ -104,8 +104,8 @@ export default function Submit() {
 
                 <h2>Other Info</h2>
                 <p>
-                    Geckos whose number is preceded by a 'b' are alternate geckos. Usually this is an uncropped or
-                    variation of it's non-alternate counterpart. They are not required and are optional.
+                    Geckos whose number is preceded by a {"'b'"} are alternate geckos. Usually this is an uncropped or
+                    variation of {"it's"} non-alternate counterpart. They are not required and are optional.
                     <br/><br/>
                     A year has 367 geckos (reminder that geckos are 0-indexed!). The last few geckos of a year are
                     usually reserved along with geckos which are multiples of 100. If you would like a specific number
