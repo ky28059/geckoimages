@@ -24,22 +24,22 @@ export default function Submit() {
                     <tr>
                         <td>
                             <div>
-                                <img src="./assets/385_sunset.png" alt="a sunset with a gecko shaped border"/>
+                                <img src="385_sunset.png" alt="a sunset with a gecko shaped border"/>
                             </div>
                         </td>
                         <td>
                             <div>
-                                <img src="./assets/660_pythagorean_triple.png" alt="many geckos forming a triangle"/>
+                                <img src="660_pythagorean_triple.png" alt="many geckos forming a triangle"/>
                             </div>
                         </td>
                         <td>
                             <div>
-                                <img src="./assets/175_PHYSICAL_FORM.jpg" alt="a picture of a 3D printed gecko"/>
+                                <img src="175_PHYSICAL_FORM.jpg" alt="a picture of a 3D printed gecko"/>
                             </div>
                         </td>
                         <td>
                             <div>
-                                <img src="./assets/304_youexpectedthisimagetomakesenseright.png"
+                                <img src="304_youexpectedthisimagetomakesenseright.png"
                                      alt="a random mismash of geckos"/>
                             </div>
                         </td>
@@ -65,22 +65,22 @@ export default function Submit() {
                     <tr>
                         <td>
                             <div>
-                                <img src="./assets/lemonthink.png" alt="a picture of a lemon thinking"/>
+                                <img src="lemonthink.png" alt="a picture of a lemon thinking"/>
                             </div>
                         </td>
                         <td>
                             <div>
-                                <img src="./assets/anti-example 1.png" alt="a 512x512 image with the letter 'E' on it"/>
+                                <img src="anti-example 1.png" alt="a 512x512 image with the letter 'E' on it"/>
                             </div>
                         </td>
                         <td>
                             <div>
-                                <img src="./assets/gecc.png" alt="a real gecko"/>
+                                <img src="gecc.png" alt="a real gecko"/>
                             </div>
                         </td>
                         <td>
                             <div>
-                                <img src="./assets/Group 10.png" alt="example image not shown"/>
+                                <img src="Group 10.png" alt="example image not shown"/>
                             </div>
                         </td>
                     </tr>
