@@ -108,8 +108,16 @@ export default function Submit() {
                     variation of {"it's"} non-alternate counterpart. They are not required and are optional.
                     <br/><br/>
                     A year has 367 geckos (reminder that geckos are 0-indexed!). The last few geckos of a year are
-                    usually reserved along with geckos which are multiples of 100. If you would like a specific number
-                    for your gecko, please specify in the file name.
+                    usually reserved along with geckos which are multiples of 100.
+                </p>
+
+                <h2>Form Info</h2>
+                <p>
+                    Make sure the file is named what the submitted gecko will be named.
+                    <br/>
+                    If you would like a specific number for your gecko, please specify in the file name.
+                    <br/><br/>
+                    the email you enter will be recorded as the author.
                 </p>
 
             </div>
