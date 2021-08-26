@@ -10,8 +10,12 @@ module.exports = {
             },
             backgroundImage: theme => ({
                 'geckos': 'url("../public/background.png")',
-            })
-        }
+            }),
+            fontSize: {
+                '12xl': '12rem',
+                '15xl': '15rem',
+            }
+        },
     },
     variants: {
         extend: {},

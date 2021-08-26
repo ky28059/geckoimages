@@ -11,7 +11,7 @@ export default function Home() {
             </Head>
 
             <div className="w-full h-screen flex items-center justify-center bg-gradient-to-r from-yellow-300 via-pink-400 to-red-500" style={{marginTop: '-56px'}}>
-                <h1 className="bg-geckos bg-contain bg-clip-text text-transparent text-7xl p-8 md:text-8xl lg:text-9xl lg:p-12 break-words">Gecko​images</h1>
+                <h1 className="bg-geckos bg-contain bg-clip-text text-transparent text-8xl p-4 md:text-12xl md:p-8 lg:text-15xl lg:p-12 break-words">Gecko​images</h1>
             </div>
 
             <div className="bg-white text-black text-center p-8">
