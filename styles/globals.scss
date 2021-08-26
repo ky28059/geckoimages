@@ -1,118 +1,19 @@
-@font-face {
-    font-family: roboto;
-    src: url("../public/RobotoSlab-Regular.ttf");
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@font-face {
-    font-family: robotoL;
-    src: url("../public/RobotoSlab-Light.ttf");
-}
-
-@font-face {
-    font-family: robotoM;
-    src: url("../public/RobotoMono-Light.ttf");
-}
-
-.title {
-  font-family: robotoL;
-  font-size: 48px;
-  color: white;
-  text-align: right;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-.subtitle {
-  font-family: robotoL;
-  font-size: 48px;
-  color: white;
-  text-align: center;
-  margin: 0;
-
-  a {
-    font-size: 24px;
+@layer base {
+  body {
+    @apply bg-gray-100;
+    //background-image: url("../public/background.png");
+    //background-repeat: no-repeat;
+    //background-attachment: fixed;
+    //background-size: cover;
   }
-}
-
-.Mainsection {
-    display: block;
-    position: relative;
-    background-color: white;
-    padding: 5px;
-    margin-top: 100vh;
-    width: 100%;
-
-    h2 {
-        font-family: robotoL;
-        text-align: center;
-        color: black;
-    }
-
-    p {
-        font-family: robotoM;
-        text-align: center;
-        color: black;
-    }
-}
-
-.section {
-    display: block;
-    position: relative;
-    background-color: white;
-    width: 100%;
-    padding: 5px;
-
-    h2 {
-        font-family: robotoL;
-        text-align: center;
-        color: black;
-    }
-
-    p {
-        font-family: robotoM;
-        text-align: center;
-        color: black;
-    }
-
-    table {
-        font-family: robotoM;
-        text-align: center;
-        color: black;
-        table-layout: fixed;
-        width: 100%;
-
-        tr td {
-            padding: 10px;
-            width: 25%;
-
-            div {
-                position: relative;
-                overflow: hidden;
-
-                img {
-                    max-width: 100%;
-                    max-height: 100%;
-                    object-fit: contain;
-                }
-            }
-        }
-    }
-}
-
-p {
-  font-family: roboto;
-  color: white;
-}
-
-body {
-    background-image: url("../public/background.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    overflow-x: hidden;
-    margin: 0;
+  h1 {
+    @apply text-7xl font-bold;
+  }
+  h2 {
+    @apply text-3xl font-bold;
+  }
 }

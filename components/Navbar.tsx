@@ -1,15 +1,15 @@
 import React from 'react';
 import Link from 'next/link';
-import styles from '../styles/Navbar.module.scss';
+import Image from 'next/image';
 
 
 export default function Navbar() {
     return (
-        <div className={styles.navbar}>
-            <Link href="/"><a className={styles.except}><img src="./icon.png" alt="gecko"/></a></Link>
-            <a href="https://drive.google.com/drive/folders/1Omwv0NNV0k_xlECZq3d4r0MbSbuHC_Og?usp=sharing">browse</a>
-            <Link href="/submit"><a>submit</a></Link>
-            <Link href="/#about"><a>about</a></Link>
+        <div className="sticky top-0 bg-white bg-opacity-90 shadow-md backdrop-blur-sm z-50 flex items-center text-black">
+            <Link href="/"><a><Image src="/icon.png" alt="gecko" width={48} height={48}/></a></Link>
+            <Link href="/#about"><a className="p-4 ml-auto">about</a></Link>
+            <Link href="/submit"><a className="p-4">submit</a></Link>
+            <Link href="/browse"><a className="p-4">browse</a></Link>
         </div>
     )
 }

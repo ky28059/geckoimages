@@ -10,11 +10,11 @@ export default function Home() {
                 <title>GeckoImages</title>
             </Head>
 
-            <div className="title">
-                <h1>Geckoimages</h1>
+            <div className="w-full h-screen flex items-center justify-center bg-gradient-to-r from-yellow-300 via-pink-400 to-red-500" style={{marginTop: '-56px'}}>
+                <h1 className="bg-geckos bg-contain bg-clip-text text-transparent text-7xl p-8 md:text-8xl lg:text-9xl lg:p-12 break-words">Gecko​images</h1>
             </div>
 
-            <div className="Mainsection">
+            <div className="bg-white text-black text-center p-8">
                 <h2><a id="about">About</a></h2>
 
                 <p>
