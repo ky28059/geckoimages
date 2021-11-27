@@ -7,7 +7,7 @@ export default function Submit() {
     return (
         <>
             <Head>
-                <title>GeckoImages | Submit</title>
+                <title>Submit | GeckoImages</title>
             </Head>
 
             <div className="subtitle text-center my-20">
