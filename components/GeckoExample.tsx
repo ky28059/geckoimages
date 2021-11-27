@@ -1,8 +1,8 @@
-import React from 'react';
+import {ReactNode} from 'react';
 import Image from 'next/image';
 
 
-type GeckoExampleProps = { src: string, alt: string, children: React.ReactNode }
+type GeckoExampleProps = { src: string, alt: string, children: ReactNode }
 export default function GeckoExample(props: GeckoExampleProps) {
     const {src, alt, children} = props;
 

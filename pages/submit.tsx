@@ -1,6 +1,4 @@
-import React from 'react';
 import Head from 'next/head';
-
 import GeckoExample from '../components/GeckoExample';
 import Card from '../components/Card';
 
