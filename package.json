@@ -11,6 +11,7 @@
   "dependencies": {
     "@types/react": "^17.0.19",
     "autoprefixer": "^10.3.2",
+    "googleapis": "^91.0.0",
     "next": "11.1.0",
     "postcss": "^8.3.6",
     "react": "17.0.2",

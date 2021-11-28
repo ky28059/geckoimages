@@ -1,11 +1,8 @@
 import {GetStaticPropsContext, InferGetStaticPropsType} from 'next';
 import Head from 'next/head';
+import {listAllAsGeckoImages} from '../util/driveUtils';
 
 
-type Gecko = {
-    name: string, number: string, url: string,
-    author: string, created: string, driveUrl: string
-}
 export default function Browse(props: InferGetStaticPropsType<typeof getStaticProps>) {
     return (
         <>
@@ -14,14 +11,14 @@ export default function Browse(props: InferGetStaticPropsType<typeof getStaticPr
             </Head>
 
             <div>
-                {props.geckos.map(x => <p key={x.number}>{x.name}</p>)}
+                {props.geckos!.map(x => <img key={x.number} alt={x.name} src={x.url}/>)}
             </div>
         </>
     )
 }
 
 export async function getStaticProps(context: GetStaticPropsContext) {
-    const geckos: Gecko[] = await (await fetch('https://geckoimages.ddns.net/api')).json();
+    const geckos = await listAllAsGeckoImages();
 
     return {
         props: {geckos}
