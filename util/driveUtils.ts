@@ -3,11 +3,19 @@
  * Requires `/geckoimages-af43fa71833e.json` to be a valid drive service account credentials json
  */
 
+import {existsSync, writeFileSync} from 'fs';
 import {drive_v3, google} from 'googleapis';
 
 
+// If no config JSON exists, create it from environment variables
+// Dumb hack because `google.auth.GoogleAuth` requires a file to authenticate a service account
+if (!existsSync('geckoimages-service-account-credentials.json')) {
+    console.log(process.env.SERVICE_ACCOUNT_CONFIG)
+    writeFileSync('geckoimages-service-account-credentials.json', process.env.SERVICE_ACCOUNT_CONFIG!);
+}
+
 const auth = new google.auth.GoogleAuth({
-    keyFile: 'geckoimages-af43fa71833e.json',
+    keyFile: 'geckoimages-service-account-credentials.json',
     scopes: [
         'https://www.googleapis.com/auth/drive',
         'https://www.googleapis.com/auth/drive.file'
@@ -20,7 +28,7 @@ export const drive = google.drive({
 });
 
 
-type GeckoImage = {
+export type GeckoImage = {
     name: string, number: string, mimeType: string, alternate: boolean,
     author: string, created: string, url: string, driveUrl: string
 }

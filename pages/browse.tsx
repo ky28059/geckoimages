@@ -1,5 +1,6 @@
 import {GetStaticPropsContext, InferGetStaticPropsType} from 'next';
 import Head from 'next/head';
+import GeckoImage from '../components/GeckoImage';
 import {listAllAsGeckoImages} from '../util/driveUtils';
 
 
@@ -10,8 +11,8 @@ export default function Browse(props: InferGetStaticPropsType<typeof getStaticPr
                 <title>Browse | GeckoImages</title>
             </Head>
 
-            <div>
-                {props.geckos!.map(x => <img key={x.number} alt={x.name} src={x.url}/>)}
+            <div className="flex flex-wrap">
+                {props.geckos!.map(x => <GeckoImage key={x.name} {...x} />)}
             </div>
         </>
     )
